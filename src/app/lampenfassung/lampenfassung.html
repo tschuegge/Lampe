@@ -1,0 +1,9 @@
+<app-lampe-komplett [lampenFarbe]="lampenFarbe().value()" [lampeBrennt]="lampeBrennt()" (gingDefekt)="lampeMeldetDefekt()"></app-lampe-komplett>
+<div class="pt-3 col-3">
+  <input type="text" [formField]="lampenFarbe" class="form-control" placeholder="Lampenfarbe">
+  <button type="button" (click)="drueckeLichtschalter()" [disabled]="lampeDefekt()" class="btn btn-primary mt-3">Lichtschalter</button>
+  @if (lampeDefekt()) {
+  <div class="alert alert-danger mt-3">Lampe hat defekt gemeldet</div>
+  <button type="button" (click)="lampeWechseln()" class="btn btn-primary">Lampe wechseln</button>
+  }
+</div>
