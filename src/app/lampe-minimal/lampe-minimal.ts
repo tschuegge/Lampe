@@ -25,15 +25,16 @@ export class LampeMinimal {
    * Methode die aufgerufen wird, wenn der Lichtschalter gedrückt wird
    */
   lichtschalterGedrueckt(): void {
-    let lampeBrennt = !this.lampeBrennt(); // Status wird "umgedreht", false wird zu true und umgekehrt
+    let lampeBrenntLokal = this.lampeBrennt(); // Status der Lampe wird ausgelesen
+    lampeBrenntLokal = !lampeBrenntLokal; // Status wird "umgedreht", false wird zu true und umgekehrt
 
-    if (lampeBrennt) { // Wenn die Lampe brennt... (this.lampeBrennt == true)
+    if (lampeBrenntLokal) { // Wenn die Lampe brennt...
       this.kreisFarbe.set('yellow'); // ... dann soll der Kreis gelb sein
     } else {
       this.kreisFarbe.set('black'); // ... sonst soll der Kreis schwarz sein
     }
 
-    this.lampeBrennt.set(lampeBrennt); // Wert zurück ins Signal schreiben
+    this.lampeBrennt.set(lampeBrenntLokal); // Wert zurück ins Signal schreiben
   }
 
 }
