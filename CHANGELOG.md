@@ -1,3 +1,7 @@
+1.1.0 (2026-06-07)
+------------------
+- Lösung für Ampel (minimal) hinzugefügt
+
 1.0.1 (2026-05-30)
 ------------------
 - Vereinfachung der kompletten Lösung (Verwendung von `effect()` statt `computed()`)

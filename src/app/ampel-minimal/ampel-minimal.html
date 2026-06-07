@@ -1,0 +1,13 @@
+<div>
+  <app-lampe-fuer-ampel-minimal [lampenFarbe]="'red'" [lampeBrennt]="lampeRotBrennt()"></app-lampe-fuer-ampel-minimal>
+</div>
+<div>
+  <app-lampe-fuer-ampel-minimal [lampenFarbe]="'orange'" [lampeBrennt]="lampeOrangeBrennt()"></app-lampe-fuer-ampel-minimal>
+</div>
+<div>
+  <app-lampe-fuer-ampel-minimal [lampenFarbe]="'green'" [lampeBrennt]="lampeGruenBrennt()"></app-lampe-fuer-ampel-minimal>
+</div>
+
+<div>
+  <button type="button" (click)="tick()" class="btn btn-primary mt-5" style="width: 100px;">Tick</button>
+</div>

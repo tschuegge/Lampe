@@ -1,10 +1,12 @@
 import { Routes } from '@angular/router';
 import { LampeMinimal } from './lampe-minimal/lampe-minimal';
 import { Lampenfassung } from './lampenfassung/lampenfassung';
+import { AmpelMinimal } from './ampel-minimal/ampel-minimal';
 
 export const routes: Routes = [
-  { path: 'minimal', component: LampeMinimal },
-  { path: 'komplett', component: Lampenfassung },
-  { path: '', pathMatch: 'full', redirectTo: '/minimal' },
+  { path: 'lampe/minimal', component: LampeMinimal },
+  { path: 'lampe/komplett', component: Lampenfassung },
+  { path: 'ampel/minimal', component: AmpelMinimal },
+  { path: '', pathMatch: 'full', redirectTo: '/lampe/minimal' },
   { path: '**', redirectTo: '/' }
 ];

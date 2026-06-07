@@ -1,10 +1,10 @@
 # Übung Lampe
 
-Lösung zur Übung Lampe, einmal mit den minimalen Anforderungen und einmal mit allen optionalen Anforderungen.
+Lösung zu den Übungen Lampe und Ampel, einmal mit den minimalen Anforderungen und einmal mit allen optionalen Anforderungen.
 
-[Software starten](https://tschuegge.github.io/Lampe/dist/)
+[Software starten](https://tschuegge.github.io/Lampe-Ampel/dist/)
 
-## Aufgabenstellung
+## Aufgabenstellung "Lampe"
 Programmiere eine Component welche eine Lampe darstellt.
 
 ### Anforderungen
@@ -20,6 +20,14 @@ Programmiere eine Component welche eine Lampe darstellt.
 - Über ein Event Binding wird eine übergeordnete Component informiert, wenn die Lampe kaputt ging.
 - Beim ausgelösten Event wird eine Referenz auf die defekte Lampe mitgegeben.
 - Über eine öffentliche Methode kann die Lampe wieder repariert werden.
+
+## Aufgabenstellung "Ampel"
+- Die bereits programmierte Component „Lampe“ muss wiederverwendet werden und übernimmt die Visualisierung der einzelnen Lampen.
+- alle optionalen Anforderungen sind notwendig, ausser dass die Lampe zufällig einen Defekt aufweist
+- die Lampen werden ohne Schaltﬂächen und in der korrekten Farbe dargestellt
+- die Klasse „Ampel“ muss eine öffentliche Methode mit dem Namen „tick“ besitzen
+- jedesmal wenn diese Methode über eine Schaltﬂäche aufgerufen wird, schaltet die Ampel einen Zustand weiter
+- der aktuelle Zustand muss graﬁsch angezeigt werden
 
 ### Hilfestellung
 Die Lampe kann mit der Component `acr-colored-circle` aus den Angular Coding Resources erzeugt werden: https://github.com/tschuegge/angular-coding-resources
